@@ -1,7 +1,7 @@
 /* Service worker du calepin : tout est mis en cache, l'app fonctionne hors connexion. */
-const VERSION = '030c21bf6677'
+const VERSION = '17521eda6011'
 const CACHE = `calepin-${VERSION}`
-const FICHIERS = ["./","assets/index-BEEOK05R.js","assets/index-BIjC-4OW.css","icones/apple-touch-icon.png","icones/icone-192.png","icones/icone-512.png","icones/icone-maskable-512.png","manifest.webmanifest","robots.txt"]
+const FICHIERS = ["./","assets/index-BdpBldQF.js","assets/index-DWPDdlbe.css","icones/apple-touch-icon.png","icones/icone-192.png","icones/icone-512.png","icones/icone-maskable-512.png","manifest.webmanifest","robots.txt"]
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FICHIERS)))
